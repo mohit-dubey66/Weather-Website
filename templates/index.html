@@ -12,11 +12,20 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-image: url('https://mocah.org/thumbs/124416-miui-8-rainy-weather-background-minimal-hd.png') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-origin: border-box;
+      
+    }
+  </style>
 
 </head>
 
 <body>
-  <nav class="row" style="background: green; color: white;">
+  <nav class="row" style="background: rgb(89, 89, 228); color: white;">
     <div align="center"><h1 class="col-md-3 text-center">Weather Web</h1></div>
   </nav>
   <br />
@@ -35,19 +44,25 @@
   </center>
   <div class="row">
     
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3" style="color: white;">
       <h1>{{city}}</h1>
-      <h3>Country code : {{data.countryCode}}</h3>
-        <h5>Coordinate : {{data.coordinates}}</h5>
-        <h5>Temp : {{data.temp}}</h5>
-        <h5>Pressure : {{data.pressure}}</h5>
-        <h5>Humidity : {{data.humidity}} </h5>
+      <h3>Country code : <strong> {{data.countryCode}}</strong></h3>
+        <h4>Coordinate : <strong>{{data.coordinates}}</strong></45>
+        <h4>Temp :<strong> {{data.temp}}</strong></h4>
+        <h4>Pressure :<strong> {{data.pressure}}</strong></h4>
+        <h4>Humidity : <strong>{{data.humidity}} </strong></h4>
         
     </div>
     
   </div>
   <footer>
-    <p>Made By: Mohit Dubey</p>
+    <div class="conatiner" style="margin: auto; margin-top: 250px; margin-left: 1050px; color: greenyellow;">
+      <h4> Made By: <strong> Mohit Dubey</strong></h4>
+      <h5>Reg. No. - <strong> 12005696</strong></h5>
+      <h5>Section - <strong> K20KH</strong></h5>
+      <h5>Subject - <strong>INT213 - Python Programming</strong></h5>
+
+    </div>
   </footer>
 </body>
 
